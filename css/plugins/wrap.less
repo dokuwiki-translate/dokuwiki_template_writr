@@ -29,3 +29,93 @@
 	border: none !important;
 	padding: 10px 20px !important;
 }
+
+.dokuwiki {
+
+	div.wrap_info,
+	div.wrap_tip,
+	div.wrap_important,
+	div.wrap_alert,
+	div.wrap_help,
+	div.wrap_download,
+	div.wrap_todo {
+		background-image: none!important;
+	}
+
+	div.wrap_info::before,
+	div.wrap_tip::before,
+	div.wrap_important::before,
+	div.wrap_alert::before,
+	div.wrap_help::before,
+	div.wrap_download::before,
+	div.wrap_todo::before {
+		font-family: 'bootstrap-icons';
+		position: absolute;
+		margin-left: -56px;
+		font-size: 46px;
+		margin-top: -16px;
+	}
+
+	div.wrap_info {
+	  background-color: rgba(13, 202, 240, 0.25);
+	}
+
+	div.wrap_info::before {
+	  content: '\F431';
+	  color: rgb(13, 202, 240);
+	}
+
+	div.wrap_tip {
+	  background-color: rgba(255, 193, 7, 0.25);
+	}
+
+	div.wrap_tip::before {
+	  content: '\F46B';
+	  color: rgb(255, 193, 7);
+	}
+
+	div.wrap_important {
+	  background-color: rgba(253, 126, 20, 0.25);
+	}
+
+	div.wrap_important::before {
+	  content: '\F33B';
+	  color: rgb(253, 126, 20);
+	}
+
+	div.wrap_alert {
+	  background-color: rgba(220, 53, 69, 0.25);
+	}
+
+	div.wrap_alert::before {
+	  content: '\F627';
+	  color: rgb(220, 53, 69);
+	}
+
+	div.wrap_help {
+	  background-color: rgba(111, 66, 193, 0.25);
+	}
+
+	div.wrap_help::before {
+	  content: '\F505';
+	  color: rgb(111, 66, 193);
+	}
+
+	div.wrap_download {
+	  background-color: rgba(25, 135, 84, 0.25);
+	}
+
+	div.wrap_download::before {
+	  content: '\F30A';
+	  color: rgb(25, 135, 84);
+	}
+
+	div.wrap_todo {
+	  background-color: rgba(32, 201, 151, 0.25);
+	}
+
+	div.wrap_todo::before {
+	  content: '\F2D2';
+	  color: rgb(32, 201, 151);
+	}
+}
