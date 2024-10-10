@@ -178,7 +178,7 @@ jQuery(document).ready(function() {
      * Enable Tooltips
      */
     function enableTooltips() {
-        jQuery('body.enableTooltips [title]:not(.media),body.enableTooltips [alt]:not(.media)').each(function() {
+        jQuery('body.enableTooltips [title]:not(.media):not(img),body.enableTooltips [alt]:not(.media):not(img)').each(function() {
             const element = jQuery(this);
             const content = element.attr('alt') ? element.attr('alt') : element.attr('title');
             element.attr('data-tooltip-content', content);
