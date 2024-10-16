@@ -213,6 +213,53 @@ jQuery(document).ready(function() {
         });
     }
 
+    /*
+     * Enable Improved File Input
+     */
+    function enableFileInput() {
+      jQuery('input[type="file"]').on('change', function() {
+        var input = jQuery(this);
+        var label = input.prev('span');
+        var group = input.parent('label');
+        var fileName = input.val().split('\\').pop() || 'No file chosen';
+
+        // Check if a div already exists
+        if (input.next('div').length > 0) {
+            input.next('div').remove();
+        }
+
+        // Create a div after the input
+        var file = jQuery('<div style="text-align:center;width:100%"></div>');
+
+        // Update the text of the file-name span
+        file.prepend(fileName);
+
+        // Add a button to clear the field
+        var button = jQuery('<button type="button" class="tagerror" style="margin-left:4px;padding: 4px 8px;font-size: 80%;"><i class="bi bi-trash"></i></button>').appendTo(file);
+
+        // Add Click event on the button
+        button.click(function(){
+
+          // Clear value
+          input.val('');
+
+          // Remove the file object
+          file.remove();
+
+          // Show input and label
+          label.show();
+          input.show();
+        });
+
+        // Insert the div after the input
+        input.after(file);
+
+        // Hide label & input
+        label.hide();
+        input.hide();
+      });
+    }
+
     jQuery(function(){
         toggleSidebar();
         toggleNavigation();
@@ -225,5 +272,6 @@ jQuery(document).ready(function() {
         enableDropdowns();
         enableTooltips();
         enableCollapse();
+        enableFileInput();
     });
 });
