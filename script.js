@@ -260,6 +260,26 @@ jQuery(document).ready(function() {
       });
     }
 
+    /*
+     * Disable Newlines in Textareas
+     */
+    function disableNewlines() {
+        // Check if "?do=" is present in the URL
+        if (window.location.search.indexOf("?do=") === -1) {
+            jQuery("form").on("submit", function(event) {
+                // Prevent the form from submitting immediately
+                event.preventDefault();
+
+                // Find the textarea and replace newlines with " \\ "
+                var textarea = jQuery(this).find('textarea');
+                textarea.val(textarea.val().replace(/\n/gm, ' \\\\\\ '));
+
+                // After running the function, manually trigger the form submission
+                this.submit();
+            });
+        }
+    }
+
     jQuery(function(){
         toggleSidebar();
         toggleNavigation();
