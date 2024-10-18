@@ -1,0 +1,98 @@
+/* =Task Plugin
+----------------------------------------------- */
+
+.dokuwiki{
+  div.vcalendar {
+    fieldset.vtodo {
+      padding: 0px;
+      border: 0px;
+
+      legend {
+        background: @ini_background_alt;
+        width: 100%;
+        padding: 10px;
+        font-weight: bold;
+      }
+      abbr {
+        border-bottom: 0px;
+
+        form {
+          div.no {
+            display: flex;
+            align-items: center;
+
+            select,input {
+              border: 5px solid @ini_border;
+              border-bottom-right-radius: 0px;
+              border-bottom-left-radius: 20px;
+              border-top-right-radius: 0px;
+              border-top-left-radius: 20px;
+              background: @ini_background;
+              width: 100%;
+              max-width: 200px;
+              height: 40px;
+              padding: 5px 10px;
+              color: @ini_text;
+            }
+            button {
+              border-bottom-left-radius: 0px;
+              border-top-left-radius: 0px;
+            }
+          }
+        }
+      }
+    }
+    fieldset.vtodo.priority3 {
+      legend, table, th {
+        background-color: rgba(220, 53, 69, 0.25);
+      }
+    }
+    fieldset.vtodo.priority2 {
+      legend, table, th {
+        background-color: rgba(255, 193, 7, 0.25);
+      }
+    }
+    fieldset.vtodo.priority1 {
+      legend, table, th {
+        background-color: rgba(13, 202, 240, 0.25);
+      }
+    }
+  }
+  div.table {
+    .priority3 {
+      background-color: rgba(220, 53, 69, 0.25);
+    }
+    .priority2 {
+      background-color: rgba(255, 193, 7, 0.25);
+    }
+    .priority1 {
+      background-color: rgba(13, 202, 240, 0.25);
+    }
+  }
+  div.task_viewmenu {
+    margin-bottom: 20px;
+
+    form {
+      label.simple {
+        margin-bottom: 10px;
+
+        input[type="checkbox"] {
+          margin-left: 10px;
+          width: 16px;
+          height: 16px;
+          align-self: center;
+        }
+      }
+      label.simple:has(input[type="checkbox"]) {
+        display: flex;
+
+        input[type="checkbox"] {
+          margin-left: 10px;
+          width: 16px;
+          height: 16px;
+          align-self: center;
+        }
+      }
+    }
+  }
+}
