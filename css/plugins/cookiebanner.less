@@ -1,0 +1,34 @@
+/* =Cookie Banner Plugin
+----------------------------------------------- */
+
+.dokuwiki {
+
+  .plugin-cookiebanner {
+    background-color: @ini_text_alt;
+    border-radius: 20px;
+    border-color: @ini_text_neu;
+    color: @ini_background_alt;
+    padding: 20px;
+    -webkit-box-shadow: none;
+  	-moz-box-shadow: none;
+  	box-shadow: none;
+    max-width: 50%;
+    bottom: 2rem;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    position: fixed;
+
+    hr {
+      display: none;
+    }
+  }
+}
+
+
+// <div class="plugin-cookiebanner">
+// <p>
+// To improve the quality of our site, we track visitors anonymously. It doesn't hurt you, but helps us tremendously. We'd be grateful if you'd give us your consent.
+// </p>
+// <hr><button class="yay">Accept</button><button class="nay">Refuse</button></div>
