@@ -48,6 +48,9 @@ body:before {
     height: 100%;
     background: @ini_background;
 }
+.makeFullWidth #writr__page:before {
+  width: ~"calc(100vw - 400px - @{ini_content_border})";
+}
 
 /* Content */
 .site-content{
@@ -111,6 +114,9 @@ body:before {
     -moz-box-sizing:    border-box;
     box-sizing:         border-box;
 }
+.makeFullWidth #writr__main {
+  width: ~"calc(100vw - 400px - 80px - @{ini_content_border})";
+}
 
 /* Sidebar */
 .widget-area,
@@ -156,6 +162,9 @@ body:before {
         display: none;
     }
 }
+.makeFullWidth .page-footer {
+  width: ~"calc(100vw - 400px - @{ini_content_border})";
+}
 
 /* =DokuWiki-specific
 ----------------------------------------------- */
@@ -172,6 +181,9 @@ div.breadcrumbs {
     a {
         text-decoration: none;
     }
+}
+.makeFullWidth div.breadcrumbs {
+  width: ~"calc(100vw - 400px - @{ini_content_border})";
 }
 body:not(.mode_show) div.breadcrumbs {
     display: none;

@@ -12,6 +12,7 @@ $lang['__sidebar_user_tools_color__']       = 'Background colour of the user too
 $lang['__theme_color__']                    = 'Primary theme colour';
 $lang['__theme_color_alt__']                = 'Secondary theme colour';
 $lang['__content_width__']                  = 'Width of the content area';
+$lang['__content_border__']                 = 'Width of the right border of the content area';
 $lang['AddNewPage']                         = 'Add new page';
 $lang['Language']                           = 'Language';
 $lang['__font__']                           = 'Font';

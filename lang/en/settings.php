@@ -15,6 +15,7 @@ $lang['doSiteToolsRequireLogin']            = 'Should the site tools require log
 $lang['_extra']                             = 'Configure Extras';
 $lang['useToolbar']                         = 'Enable the toolbar';
 $lang['useTooltips']                        = 'Enable the tooltips';
+$lang['makeFullWidth']                      = 'Make the content area full width';
 $lang['doLogoChangesByNamespace']           = 'Should the logo changes be by namespace';
 $lang['doLogoLinkChangesByNamespace']       = 'Should the logo link changes be by namespace';
 $lang['doTitleChangesByNamespace']          = 'Should the site title changes be by namespace';

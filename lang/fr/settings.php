@@ -15,6 +15,7 @@ $lang['doSiteToolsRequireLogin']            = 'Les outils du site doivent-ils n�
 $lang['_extra']                             = 'Configure les Extras';
 $lang['useToolbar']                         = 'Active la barre d\'outils';
 $lang['useTooltips']                        = 'Active les infobulles';
+$lang['makeFullWidth']                      = 'Agrandir la zone de contenu sur toute la largeur';
 $lang['doLogoChangesByNamespace']           = 'Les changements de logo doivent-ils être par espace de noms';
 $lang['doLogoLinkChangesByNamespace']       = 'Les changements de liens logo doivent-ils être par espace de noms';
 $lang['doTitleChangesByNamespace']          = 'Les changements de titre du site doivent-ils être par espace de noms';
