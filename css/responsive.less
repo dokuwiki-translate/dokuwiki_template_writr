@@ -135,6 +135,10 @@
     .js .main-navigation ul {
         display: none;
     }
+    .js .main-navigation.toggled > div.plugin_include_content > ul,
+    .js .main-navigation.toggled > div > div > ul {
+        display: block;
+    }
     .main-navigation a:hover,
     .main-navigation li .curid > a {
         background: none !important;
@@ -216,10 +220,12 @@
     }
 
     .makeFullWidth #writr__main,
-    .makeFullWidth .page-footer,
-    .makeFullWidth div.breadcrumbs,
     .makeFullWidth #writr__page:before {
       width: 100%;
+    }
+    .makeFullWidth .page-footer,
+    .makeFullWidth div.breadcrumbs {
+      width: ~"calc(100vw - 14px)";
     }
 
     div.breadcrumbs {
@@ -228,7 +234,7 @@
 
     #dw__toc {
         float: none;
-        width: 100%;
+        width: ~"calc(100vw - 14px)";
         margin: -20px -40px 20px;
         padding: 0 40px;
 
@@ -237,6 +243,24 @@
             padding-left: 0;
             padding-right: 0;
         }
+    }
+
+    .makeFullWidth #plugin_bloglinks__links {
+      width: ~"calc(100vw - 14px)";
+    }
+
+    #plugin_bloglinks__links > div {
+
+      a.wikilink1 {
+
+        span.title {
+          display: none;
+        }
+      }
+    }
+    .makeFullWidth div.comment_wrapper::before,
+    .makeFullWidth div.comment_wrapper::after {
+    	width: ~"calc(100vw - 14px)";
     }
 }
 

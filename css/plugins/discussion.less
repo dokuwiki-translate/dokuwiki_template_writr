@@ -33,10 +33,6 @@
     color: @ini_background;
 }
 
-.makeFullWidth div.comment_wrapper::before {
-	width: ~"calc(100vw - 400px - @{ini_content_border})";
-}
-
 .dokuwiki div.comment_wrapper::after {
     content: "bottom";
     position: absolute;
@@ -52,6 +48,7 @@
     color: @ini_background;
 }
 
+.makeFullWidth div.comment_wrapper::before,
 .makeFullWidth div.comment_wrapper::after {
 	width: ~"calc(100vw - 400px - @{ini_content_border})";
 }
